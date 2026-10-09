@@ -13,10 +13,21 @@ pipeline {
     stages {
 
         stage('Checkout Code') {
-            steps {
-                checkout scm
-            }
+    steps {
+        script {
+            checkout([
+                $class: 'GitSCM',
+                branches: [[name: '*/main']],
+                doGenerateSubmoduleConfigurations: false,
+                extensions: [],
+                userRemoteConfigs: [[
+                    url: 'https://github.com/sreeharimm-gitjenkins-maven-github-package.git'
+                ]],
+                gitTool: 'LinuxGit'
+            ])
         }
+    }
+}
 
         stage('Verify Environment') {
             steps {
