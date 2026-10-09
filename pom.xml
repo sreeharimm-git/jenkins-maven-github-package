@@ -2,7 +2,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.nihal2</groupId>
+    <groupId>com.sreehari</groupId>
     <artifactId>jenkins-demo</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
@@ -13,7 +13,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/Nihal106/jenkins-maven-package</url>
+            <url>https://maven.pkg.github.com/sreeharimm-git/maven-package-demo</url>
         </repository>
     </distributionManagement>
 
